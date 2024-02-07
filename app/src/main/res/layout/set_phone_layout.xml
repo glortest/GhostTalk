@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.ChangePasswordActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/activityChangePasswordHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/activityChangePasswordButtonBack"
+            android:layout_width="@dimen/buttons_size"
+            android:layout_height="@dimen/buttons_size"
+            android:src="@drawable/back_ui"/>
+
+        <TextView
+            style="@style/title_fragment"
+            android:id="@+id/activityChangePasswordTitle"
+            android:text="@string/set_phone_number" />
+
+        <ImageView
+            android:id="@+id/activityChangePasswordButtonCheck"
+            android:layout_width="@dimen/buttons_size"
+            android:layout_height="@dimen/buttons_size"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/marginEnd_normal"
+            android:src="@drawable/check_ui"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/activityChangePasswordButtonNext"
+            android:layout_width="@dimen/buttons_size"
+            android:layout_height="@dimen/buttons_size"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/marginEnd_normal"
+            android:visibility="visible"
+            android:src="@drawable/next_ui" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/setPhoneActivityPhone"
+        android:layout_below="@id/activityChangePasswordHeader"
+        android:background="@drawable/background_edit"
+        android:inputType="textVisiblePassword"
+        />
+    <TextView
+        style="@style/text_hint"
+        android:id="@+id/setPhoneActivityPhoneText"
+        android:gravity="center"
+        android:text="@string/phone_number_text"
+        android:layout_below="@id/setPhoneActivityPhone" />
+
+
+    <View
+        android:id="@+id/setPhoneActivityView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/setPhoneActivityPhone"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/edit_text" />
+
+
+    <TextView
+        android:id="@+id/setPhoneActivityCodeText"
+        style="@style/text_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setPhoneActivityView"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:text="@string/code_from_sms"
+        android:textSize="@dimen/textSize_normal" />
+
+    <EditText
+        android:id="@+id/setPhoneActivityCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setPhoneActivityCodeText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/marginTop_normal"
+        android:layout_marginStart="@dimen/marginStart_normal"
+        android:layout_marginEnd="@dimen/marginEnd_normal"
+        android:background="@drawable/background_edit"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        android:textAlignment="center"
+        android:inputType="textVisiblePassword"
+        android:padding="@dimen/padding_large"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/textSize_large" />
+</RelativeLayout>

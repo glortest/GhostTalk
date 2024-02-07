@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/showDialogChatCardView"
+        android:layout_width="@dimen/showDialogImageCardView_size"
+        android:layout_height="@dimen/showDialogImageCardView_size"
+        app:cardCornerRadius="@dimen/corner_radius"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+
+                <TextView
+                    android:fontFamily="@font/moscowsansregular"
+                    android:id="@+id/showDialogChatTitle"
+                    style="@style/title_fragment"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="@string/select_an_action" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/showDialogChatButtonLeave"
+                    android:background="@drawable/grey_button_ux"
+                    android:layout_width="200dp"
+                    style="@style/orange_button"
+                    android:layout_below="@id/showDialogChatTitle"
+                    android:text="@string/leave_channel" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/showDialogChatButtonJoin"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/showDialogChatTitle"
+                    android:background="@drawable/orange_button_ux"
+                    android:text="@string/join_channel"
+                    style="@style/orange_button"
+                    android:textSize="@dimen/textSize_small"
+                    android:visibility="invisible" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/orange_button"
+                    android:layout_width="200dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/orange_button_ux"
+                    android:id="@+id/showDialogChatButtonSettings"
+                    android:layout_below="@id/showDialogChatButtonJoin"
+                    android:text="@string/channel_settings"
+                    android:textAllCaps="false"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.AddFriendActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/findChatActivityHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/findChatActivityButtonBack"
+            android:layout_width="@dimen/buttons_size"
+            android:layout_height="@dimen/buttons_size"
+            android:src="@drawable/back_ui" />
+
+        <TextView
+            style="@style/title_fragment"
+            android:text="@string/list_of_subscribers" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/findChatActivityRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/findChatActivityHeader"
+        android:layout_marginTop="@dimen/marginTop_small"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/navigation_register" app:startDestination="@id/logInFragment">
+    <fragment android:id="@+id/logInFragment" android:name="com.glortest.messenger.fragments.LogInFragment" android:label="fragment_log_in" tools:layout="@layout/log_in_layout">
+        <action android:id="@+id/action_logInFragment_to_signUpFragment" app:destination="@id/signUpFragment"/>
+        <action android:id="@+id/action_logInFragment_to_forgotPasswordFragment" app:destination="@id/forgotPasswordFragment"/>
+    </fragment>
+    <fragment android:id="@+id/signUpFragment" android:name="com.glortest.messenger.fragments.SignUpFragment" android:label="fragment_sign_up" tools:layout="@layout/sign_up_layout"/>
+    <fragment android:id="@+id/forgotPasswordFragment" android:name="com.glortest.messenger.fragments.ForgotPasswordFragment" android:label="fragment_forgot_password" tools:layout="@layout/forgot_password_layout">
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_newPasswordFragment"
+            app:destination="@id/newPasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPasswordFragment"
+        android:name="com.glortest.messenger.fragments.NewPasswordFragment"
+        android:label="fragment_new_password"
+        tools:layout="@layout/new_password_layout" />
+</navigation>

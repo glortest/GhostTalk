@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.AddFriendActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/addFriendsActivityHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/background">
+
+        <ImageView
+            android:id="@+id/addFriendActivityButtonBack"
+            android:layout_width="@dimen/buttons_size"
+            android:layout_height="@dimen/buttons_size"
+            android:src="@drawable/back_ui" />
+
+        <TextView
+            style="@style/title_fragment"
+            android:text="@string/add_a_friend" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        style="@style/edit_text"
+        android:id="@+id/addFriendActivityUsername"
+        android:layout_below="@id/addFriendsActivityHeader" />
+    <TextView
+        style="@style/text_hint"
+        android:id="@+id/addFriendActivityPhoneNumberHelp"
+        android:layout_marginStart="@dimen/marginStart_large"
+        android:layout_marginEnd="@dimen/marginEnd_large"
+        android:layout_below="@id/addFriendActivityUsername"
+        android:gravity="center"
+        android:text="@string/please_enter_the_username_of_the_person_you_want_to_find" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/orange_button"
+        android:id="@+id/addFriendActivityButtonFind"
+        android:layout_width="130dp"
+        android:layout_below="@id/addFriendActivityPhoneNumberHelp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/marginTop_normal"
+        android:background="@drawable/orange_button_ux"
+        android:text="@string/find" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/addFriendActivityRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addFriendActivityButtonFind"
+        android:layout_marginTop="@dimen/marginTop_small"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</RelativeLayout>

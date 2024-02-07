@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:clipToPadding="false"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/signUpFragmentHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/background">
+
+            <ImageView
+                android:id="@+id/signUpActivityButtonBack"
+                android:layout_width="@dimen/buttons_size"
+                android:layout_height="@dimen/buttons_size"
+                android:src="@drawable/back_ui" />
+
+            <TextView
+                style="@style/title_fragment"
+                android:id="@+id/signUpFragmentTitle"
+                android:text="@string/create_new_channel" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/signUpFragmentImageProfileLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/marginTop_normal"
+            android:layout_below="@id/signUpFragmentHeader">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/signUpFragmentImageProfile"
+                android:layout_width="@dimen/profileImage_size"
+                android:layout_height="@dimen/profileImage_size"
+                android:background="@drawable/background"
+                android:scaleType="centerCrop"
+                app:riv_oval="true" />
+
+            <TextView
+                style="@style/text_hint"
+                android:gravity="center"
+                android:id="@+id/signUpFragmentImageProfileHelp"
+                android:layout_centerInParent="true"
+                android:text="@string/add_channel_image"/>
+        </RelativeLayout>
+
+        <EditText
+            style="@style/edit_text"
+            android:id="@+id/signUpFragmentName"
+            android:layout_below="@id/signUpFragmentImageProfileLayout"
+            android:hint="@string/channel_name" />
+
+        <EditText
+            style="@style/edit_text"
+            android:id="@+id/signUpFragmentUsername"
+            android:layout_below="@id/signUpFragmentName"
+            android:hint="@string/channel_tag" />
+
+        <EditText
+            style="@style/edit_text"
+            android:id="@+id/signUpFragmentAbout"
+            android:layout_below="@id/signUpFragmentUsername"
+            android:hint="@string/about_channel" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/signUpFragmentButtonCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpFragmentAbout"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/marginTop_large"
+            android:backgroundTint="@color/orange"
+            android:src="@drawable/check_ui"
+            app:borderWidth="@dimen/borderWidth"
+            app:elevation="@dimen/elevation"
+            android:layout_marginEnd="@dimen/marginEnd_normal"/>
+
+    </RelativeLayout>
+</ScrollView>

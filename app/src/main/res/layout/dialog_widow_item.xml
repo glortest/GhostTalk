@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/showDialogCardView"
+        android:layout_width="@dimen/showDialogCardView_size"
+        android:layout_height="@dimen/showDialogCardView_size"
+        app:cardCornerRadius="@dimen/corner_radius"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:fontFamily="@font/moscowsansregular"
+                    style="@style/text_user"
+                    android:id="@+id/showDialogMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="@dimen/marginStart_small"
+                    android:layout_marginEnd="@dimen/marginEnd_small"
+                    android:gravity="center"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/showDialogButtonForward"
+                    android:layout_width="@dimen/showDialogButtonForward_size"
+                    android:layout_height="@dimen/showDialogButtonForward_size"
+                    android:layout_below="@id/showDialogMessage"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/marginTop_large"
+                    android:backgroundTint="@color/orange"
+                    android:src="@drawable/next_ui"
+                    app:borderWidth="0dp"
+                    app:elevation="0dp"
+                    app:fabCustomSize="@dimen/showDialogButtonForward_size"
+                    app:rippleColor="@color/background" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

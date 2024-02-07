@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activityMainDrawerLayout"
+    android:background="@color/background"
+    tools:context=".activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/activityMainHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/activityMainImageProfile"
+                android:layout_width="@dimen/buttons_size"
+                android:layout_height="@dimen/buttons_size"
+                android:scaleType="centerCrop"
+                app:riv_oval="true" />
+
+
+            <TextView
+                style="@style/title_fragment"
+                android:text="@string/channels"
+                />
+
+            <ImageView
+                android:id="@+id/search_chats"
+                android:layout_width="@dimen/buttons_size"
+                android:layout_height="@dimen/buttons_size"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/marginEnd_normal"
+                app:srcCompat="@drawable/search_ui" />
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/actionMainHeaderView"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/activityMainHeader"
+            android:background="@color/edit_text" />
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/actionMainHeaderView">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/activityMainRecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                android:scrollbars="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/activityMainWarningLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/activityMainWarningImage"
+                android:layout_width="@dimen/warningImage_size"
+                android:layout_height="@dimen/warningImage_size"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/no_chats_ui"
+                android:background="@drawable/back_no_chats_ux"/>
+
+            <TextView
+                android:fontFamily="@font/moscowsansregular"
+                android:id="@+id/activityMainWarningText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activityMainWarningImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/marginTop_normal"
+                android:text="@string/you_don_t_have_any_channels_yet"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/textSize_normal" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/activityChannelsNavigationView"
+        android:layout_width="@dimen/mainNavigationView_width"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        app:itemIconTint="@color/orange"
+        app:itemTextColor="@color/text_color"
+        android:fitsSystemWindows="true"
+        android:overScrollMode="never"
+        app:menu="@menu/channels_navigation"
+        app:headerLayout="@layout/navigation_header"
+        android:layout_gravity="start" />
+</androidx.drawerlayout.widget.DrawerLayout>

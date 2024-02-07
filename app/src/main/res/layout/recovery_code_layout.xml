@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.RecoveryCodeActivity">
+
+    <RelativeLayout
+        android:id="@+id/activityRecoveryCodeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            style="@style/title_fragment"
+            android:id="@+id/activityRecoveryCodeText"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/textSize_greeting" />
+
+        <TextView
+            style="@style/text_hint"
+            android:layout_below="@id/activityRecoveryCodeText"
+            android:gravity="center"
+            android:text="@string/remember_recovery_code"
+            android:textSize="@dimen/textSize_normal" />
+    </RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/activityRecoveryCodeButtonStartMessaging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:elevation="@dimen/elevation"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/check_ui"
+        android:layout_marginTop="@dimen/marginTop_normal"
+        app:borderWidth="@dimen/borderWidth"
+        android:backgroundTint="@color/orange"
+        android:layout_below="@id/activityRecoveryCodeLayout" />
+</RelativeLayout>

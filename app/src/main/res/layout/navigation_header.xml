@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/padding_large"
+    android:paddingStart="@dimen/padding_large"
+    android:paddingEnd="@dimen/padding_large"
+    android:paddingBottom="@dimen/padding_large">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/headerImageProfile"
+        android:layout_width="@dimen/navigationHeaderImageProfile_size"
+        android:layout_height="@dimen/navigationHeaderImageProfile_size"
+        android:scaleType="centerCrop"
+        app:riv_oval="true" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerImageProfile"
+        android:layout_marginTop="@dimen/marginTop_normal">
+
+        <TextView
+            android:id="@+id/headerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/textSize_normal"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/headerUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/headerName"
+            android:textColor="@color/text_hint"
+            android:textSize="@dimen/textSize_small" />
+    </RelativeLayout>
+</RelativeLayout>

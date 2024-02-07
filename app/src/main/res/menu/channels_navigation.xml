@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/chats" android:icon="@drawable/chats_icon_ui" android:title="@string/chats"/>
+    <item android:id="@+id/new_chanenl" android:icon="@drawable/new_channel_ui" android:title="@string/create_new_channel"/>
+    <item android:id="@+id/settings" android:icon="@drawable/settings_ui" android:title="@string/settings"/>
+</menu>

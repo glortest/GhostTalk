@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UserInfoActivity"
+    android:background="@color/background"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    android:clipToPadding="false"
+    android:fillViewport="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/userActivityHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/background">
+
+            <ImageView
+                android:id="@+id/userActivityButtonBack"
+                android:layout_width="@dimen/buttons_size"
+                android:layout_height="@dimen/buttons_size"
+                android:src="@drawable/back_ui"
+                />
+
+            <TextView
+                android:id="@+id/userActivityTitle"
+                style="@style/title_fragment" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/userActivityHeaderImageProfile"
+            android:layout_width="@dimen/profileImage_size"
+            android:layout_height="@dimen/profileImage_size"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/userActivityHeader"
+            android:layout_marginTop="@dimen/marginTop_normal"
+            android:scaleType="centerCrop"
+            app:riv_oval="true" />
+
+        <TextView
+            android:fontFamily="@font/moscowsansregular"
+            android:id="@+id/userActivityTextInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userActivityHeaderImageProfile"
+            android:layout_marginStart="@dimen/marginStart_normal"
+            android:layout_marginTop="@dimen/marginTop_large"
+            android:text="@string/info"
+            android:textColor="@color/orange"
+            android:textSize="@dimen/textSize_small"
+            android:textStyle="bold" />
+        <RelativeLayout
+            android:id="@+id/userActivityButtonPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userActivityTextInfo"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:padding="@dimen/buttons_padding">
+
+            <ImageView
+                android:id="@+id/userActivityButtonPhoneNumberIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/username_ui"
+                />
+
+            <RelativeLayout
+                android:id="@+id/userActivityButtonPhoneNumberBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_toEndOf="@id/userActivityButtonPhoneNumberIcon">
+
+                <TextView
+                    android:id="@+id/userActivityButtonPhoneNumberHelp"
+                    style="@style/text_hint"
+                    android:text="@string/username"
+                    android:textColor="@color/text_hint" />
+
+                <TextView
+                    android:id="@+id/userActivityButtonPhoneNumberText"
+                    android:layout_below="@id/userActivityButtonPhoneNumberHelp"
+                    style="@style/text_user"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <View
+            android:id="@+id/userActivityButtonPhoneNumberView"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/view_height"
+            style="@style/text_hint"
+            android:layout_below="@id/userActivityButtonPhoneNumber"
+            android:background="@color/text_hint" />
+        <RelativeLayout
+            style="@style/text_hint"
+            android:id="@+id/userActivityButtonBio"
+            android:layout_below="@id/userActivityButtonPhoneNumber"
+            android:padding="@dimen/buttons_padding">
+
+            <ImageView
+                android:id="@+id/userActivityButtonBioIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/info_ui"
+                />
+
+            <RelativeLayout
+                android:id="@+id/userActivityButtonBioBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_toEndOf="@id/userActivityButtonBioIcon">
+
+                <TextView
+                    android:id="@+id/userActivityButtonBioHelp"
+                    style="@style/text_hint"
+                    android:text="@string/about_channel"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/textSize_small" />
+
+                <TextView
+                    android:id="@+id/userActivityButtonBioText"
+                    android:layout_below="@id/userActivityButtonBioHelp"
+                    style="@style/text_user"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    <View
+        android:id="@+id/userActivityButtonBioView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/view_height"
+        android:layout_below="@id/userActivityButtonBio"
+        android:background="@color/text_hint" />
+    <RelativeLayout
+        android:id="@+id/userActivityButtonSubs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/userActivityButtonBioView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/buttons_padding">
+
+        <ImageView
+            android:id="@+id/userActivityButtonSubsIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/chats_icon_ui" />
+
+        <RelativeLayout
+            android:id="@+id/userActivityButtonSubsBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/marginStart_large"
+            android:layout_toEndOf="@id/userActivityButtonSubsIcon">
+
+            <TextView
+                android:id="@+id/userActivityButtonSubsHelp"
+                android:text="@string/subscribers"
+                style="@style/text_hint"/>
+
+            <TextView
+                android:id="@+id/userActivityButtonSubsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userActivityButtonSubsHelp"
+                style="@style/text_user"
+                android:textSize="@dimen/textSize_normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

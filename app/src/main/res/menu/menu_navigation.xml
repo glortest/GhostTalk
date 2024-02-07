@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/channels_list" android:icon="@drawable/channels_ui" android:title="@string/channels_list"/>
+    <item android:id="@+id/friend" android:icon="@drawable/add_friend_ui" android:title="@string/add_a_friend"/>
+    <item android:id="@+id/archive" android:icon="@drawable/archive_ui" android:title="@string/open_archive"/>
+    <item android:id="@+id/settings" android:icon="@drawable/settings_ui" android:title="@string/settings"/>
+    <item android:id="@+id/contacts" android:icon="@drawable/phone_ui" android:title="@string/contacts"/>
+</menu>

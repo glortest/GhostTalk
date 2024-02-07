@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "131057516433",
+    "firebase_url": "https://ghosttalk-f045e-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ghosttalk-f045e",
+    "storage_bucket": "ghosttalk-f045e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131057516433:android:ed509b66bb75684427e430",
+        "android_client_info": {
+          "package_name": "com.glortest.messenger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7G7fhDyZrnbFec174ahJqsYUT2dafNL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

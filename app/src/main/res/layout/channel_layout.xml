@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".activities.ChatActivity">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/activityChatsCardViewUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        app:cardElevation="@dimen/elevation">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/edit_text"
+            android:padding="@dimen/padding_large">
+
+            <RelativeLayout
+                android:id="@+id/activityChatsHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/activityChatsButtonBack"
+                    android:layout_width="@dimen/buttons_size"
+                    android:layout_height="@dimen/buttons_size"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/back_ui" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true">
+
+                    <RelativeLayout
+                        android:id="@+id/activityChatUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/activityChatImageProfile"
+                            android:layout_width="@dimen/activityChatImageProfile_size"
+                            android:layout_height="@dimen/activityChatImageProfile_size"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            app:riv_oval="true" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/marginStart_small"
+                            android:layout_toEndOf="@id/activityChatImageProfile">
+
+                            <TextView
+                                android:fontFamily="@font/moscowsansregular"
+                                android:id="@+id/activityChatUserName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/textSize_normal"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:fontFamily="@font/moscowsansregular"
+                                android:id="@+id/activityChatUsername"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/activityChatUserName"
+                                android:textColor="@color/orange"
+                                android:textSize="@dimen/activityChatOnline_textSize"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/imageOther"
+                    android:layout_width="@dimen/buttons_size"
+                    android:layout_height="@dimen/buttons_size"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/more_ui" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/activityChatsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/activityChatsCardViewChat"
+        android:layout_below="@id/activityChatsCardViewUser"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:stackFromEnd="true" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/activityChatsCardViewChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardElevation="@dimen/elevation">
+
+        <RelativeLayout
+            android:id="@+id/blockedView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/background"
+            android:padding="@dimen/padding_large"
+            android:visibility="gone">
+
+            <TextView
+                android:fontFamily="@font/moscowsansregular"
+                android:id="@+id/activityChatsMessageBlocked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:textAlignment="center"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginEnd_small"
+                android:background="@android:color/transparent"
+                android:text="@string/sending_messages_is_limited"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/textSize_normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sendView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/edit_text"
+            android:padding="@dimen/padding_large">
+
+            <EditText
+                android:id="@+id/activityChatsMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/marginEnd_small"
+                android:layout_toStartOf="@id/activityChatsButtonSend"
+                android:background="@android:color/transparent"
+                android:hint="@string/message"
+                android:imeOptions="actionDone"
+                android:inputType="text|textCapSentences"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_hint"
+                android:textSize="@dimen/textSize_normal" />
+
+            <ImageView
+                android:id="@+id/activityChatsButtonSend"
+                android:layout_width="@dimen/buttons_size"
+                android:layout_height="@dimen/buttons_size"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/send_ui"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/activityChatsButtonAttach"
+                android:layout_width="@dimen/buttons_size"
+                android:layout_height="@dimen/buttons_size"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/add_file_ui" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/activityChatWarningLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:fontFamily="@font/moscowsansregular"
+            android:id="@+id/activityChatWarningText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/marginTop_normal"
+            android:text="@string/no_messages_here_yet"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/textSize_normal" />
+    </RelativeLayout>
+</RelativeLayout>

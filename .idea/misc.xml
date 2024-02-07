@@ -1,0 +1,77 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/voych/AndroidStudioProjects/Co-Fe/app/src/main/res/layout/activity_main.xml" value="0.1461499493414387" />
+        <entry key="..\:/Users/voych/AndroidStudioProjects/Co-Fe/app/src/main/res/layout/activity_settings.xml" value="0.1461499493414387" />
+        <entry key="..\:/Users/voych/AndroidStudioProjects/Co-Fe/app/src/main/res/layout/dialog.xml" value="0.1461499493414387" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/background.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/background_container_message.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/background_edit.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/background_received_message.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_add.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_back.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_chats.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_check.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_close.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_code.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_edit.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_forward.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_image.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_info.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_key.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_launcher_background.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_new_group.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_no_friends.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_person.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_photo_camera.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_search.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_send.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_settings.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_status.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_username.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/drawable/ic_voice.xml" value="0.129" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_add_friend.xml" value="0.171875" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_change_bio.xml" value="0.171875" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_change_name.xml" value="0.171875" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_change_password.xml" value="0.1859375" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_change_username.xml" value="0.171875" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_chat.xml" value="0.33" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_check_password.xml" value="0.171875" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_find_chat.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_image_profile.xml" value="0.1859375" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_image_user.xml" value="0.171875" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_image_watch.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_new_password_fragment.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_recovery_code.xml" value="0.171875" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_register.xml" value="0.171875" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_settings.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_splash_screen.xml" value="0.1859375" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/activity_user_info.xml" value="0.33" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/container_image.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/container_message.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/container_received_image.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/container_received_message.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/dialog.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/dialog_image.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/dialog_signout.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/fragment_forgot_password.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/fragment_log_in.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/fragment_sign_up.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/loading.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/navigation_header.xml" value="0.1859375" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/recent_user.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/layout/user.xml" value="0.3038949275362319" />
+        <entry key="..\:/programming/android/apps/CoFe/app/src/main/res/menu/menu_navigation.xml" value="0.1859375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="corretto-11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

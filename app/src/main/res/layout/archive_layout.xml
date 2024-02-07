@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activityMainDrawerLayout"
+    android:background="@color/background"
+    tools:context=".activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/activityArchiveHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/activityArchiveButtonBack"
+                android:layout_width="@dimen/buttons_size"
+                android:layout_height="@dimen/buttons_size"
+                android:src="@drawable/back_ui" />
+
+            <TextView
+                style="@style/title_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/archived_chats"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/textSize_large" />
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <View
+            android:id="@+id/activityArchiveHeaderView"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/activityArchiveHeader"
+            android:background="@color/text_hint"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activityArchiveHeaderView">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/activityArchiveRecyclerView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                android:scrollbars="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/activityArchiveWarningLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/activityArchiveWarningImage"
+                android:layout_width="@dimen/warningImage_size"
+                android:layout_height="@dimen/warningImage_size"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/no_chats_ui"
+                android:background="@drawable/back_no_chats_ux"/>
+
+            <TextView
+                android:id="@+id/activityArchiveWarningText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/activityArchiveWarningImage"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/marginTop_normal"
+                android:text="@string/you_don_t_have_any_archived_chats_yet"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/textSize_normal" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/activityArchiveNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        app:itemIconTint="@color/orange"
+        app:itemTextColor="@color/text_color"
+        android:fitsSystemWindows="true"
+        android:overScrollMode="never"
+        app:menu="@menu/menu_navigation"
+        app:headerLayout="@layout/navigation_header"
+        android:layout_gravity="start" />
+</androidx.drawerlayout.widget.DrawerLayout>

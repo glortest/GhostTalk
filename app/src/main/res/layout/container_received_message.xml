@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="@dimen/container_marginTop"
+    android:padding="@dimen/container_padding">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/containerImageProfile"
+        android:layout_width="@dimen/containerImageProfile_size"
+        android:layout_height="@dimen/containerImageProfile_size"
+        android:layout_alignBottom="@id/containerMessageText"
+        app:riv_oval="true"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:fontFamily="@font/moscowsansregular"
+        android:id="@+id/containerMessageText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/containerMessageText_marginStart"
+        android:layout_toEndOf="@id/containerImageProfile"
+        android:background="@drawable/background_received_message"
+        android:maxWidth="@dimen/container_messageMaxWidth"
+        android:paddingStart="@dimen/container_paddingStartEnd"
+        android:paddingTop="@dimen/container_paddingTopBottom"
+        android:paddingEnd="@dimen/container_paddingStartEnd"
+        android:paddingBottom="@dimen/container_paddingTopBottom"
+        android:textColor="@color/orange"
+        android:textSize="@dimen/textMessage_textSize" />
+
+    <TextView
+        android:fontFamily="@font/moscowsansregular"
+        android:id="@+id/containerMessageDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/containerMessageText"
+        android:layout_alignStart="@id/containerMessageText"
+        android:layout_marginTop="@dimen/containerDateTime_marginTop"
+        android:textColor="@color/text_hint"
+        android:textSize="@dimen/containerDateTime_textSize" />
+</RelativeLayout>
