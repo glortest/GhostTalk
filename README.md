@@ -9,3 +9,7 @@ GhostTalk - Мессенджер высокого уровня надёжнос�
 
 ### Руководство по установке:
 Загрузите файл https://github.com/glortest/GhostTalk/blob/master/GhostTalk_Alpha.apk, распакуйте, и приложение готово к использванию.
+
+
+### Модель взаимодействия пользоввателя с приложением:
+<a href="https://github.com/glortest/GhostTalk/blob/master/app/scheme.png"><img src="https://github.com/glortest/GhostTalk/blob/master/app/scheme.png" /></a>
