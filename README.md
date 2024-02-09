@@ -12,4 +12,4 @@ GhostTalk - Мессенджер высокого уровня надёжнос�
 
 
 ### Модель взаимодействия пользоввателя с приложением:
-<a href="https://github.com/glortest/GhostTalk/blob/master/app/scheme.png"><img src="https://github.com/glortest/GhostTalk/blob/master/app/scheme.png" /></a>
+<a href="https://github.com/glortest/GhostTalk/blob/master/app/Scheme.png"><img src="https://github.com/glortest/GhostTalk/blob/master/app/Scheme.png" /></a>
