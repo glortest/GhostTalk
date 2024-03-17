@@ -65,7 +65,7 @@
             style="@style/edit_text"
             android:id="@+id/signUpFragmentUsername"
             android:layout_below="@id/signUpFragmentName"
-            android:hint="@string/username"/>
+            android:hint="@string/nickname"/>
 
         <EditText
             style="@style/edit_text"

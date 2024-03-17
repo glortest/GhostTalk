@@ -25,7 +25,7 @@
         <TextView
             style="@style/title_fragment"
             android:id="@+id/activityChangeUsernameTitle"
-            android:text="@string/new_username"/>
+            android:text="@string/new_nickname"/>
 
         <ImageView
             android:id="@+id/activityChangeUsernameButtonCheck"

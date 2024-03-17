@@ -75,7 +75,7 @@ public class ChannelSettingsActivity extends BaseActivity {
     }
     private void setListeners(){
         binding.settingsActivityButtonBack.setOnClickListener(view -> onBackPressed());
-        binding.settingsActivityButtonUsername.setOnClickListener(view -> Toast.makeText(this, R.string.channel_username_is_not_changeable, Toast.LENGTH_LONG));
+        binding.settingsActivityButtonUsername.setOnClickListener(view -> Toast.makeText(this, R.string.channel_nickname_is_not_changeable, Toast.LENGTH_LONG));
         binding.settingsActivityButtonBio.setOnClickListener(view -> {
             Intent intent = new Intent(this, ChangeChannelBioActivity.class);
             intent.putExtra(Constants.COLLECTION_CHANNEL, channel);

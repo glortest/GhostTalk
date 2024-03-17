@@ -102,7 +102,7 @@
                 <TextView
                     style="@style/text_hint"
                     android:id="@+id/settingsActivityButtonPhoneNumberHelp"
-                    android:text="@string/username" />
+                    android:text="@string/nickname" />
 
                 <TextView
                     style="@style/text_user"
@@ -115,10 +115,8 @@
         </RelativeLayout>
         <View
             android:id="@+id/settingsActivityButtonPhoneNumberView"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/view_height"
-            android:layout_below="@id/settingsActivityButtonUsername"
-            android:background="@color/edit_text" />
+            style="@style/top_view"
+            android:layout_below="@id/settingsActivityButtonUsername" />
 
         <RelativeLayout
             android:id="@+id/settingsActivityButtonName"
@@ -164,10 +162,8 @@
         </RelativeLayout>
         <View
             android:id="@+id/settingsActivityButtonNameView"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/view_height"
-            android:layout_below="@id/settingsActivityButtonName"
-            android:background="@color/edit_text" />
+            style="@style/top_view"
+            android:layout_below="@id/settingsActivityButtonName" />
         <RelativeLayout
             android:id="@+id/settingsActivityButtonBio"
             android:layout_width="wrap_content"
@@ -214,10 +210,8 @@
 
         <View
             android:id="@+id/userActivityButtonBioView"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/view_height"
-            android:layout_below="@id/settingsActivityButtonBio"
-            android:background="@color/edit_text" />
+            style="@style/top_view"
+            android:layout_below="@id/settingsActivityButtonBio" />
         <RelativeLayout
             android:id="@+id/userActivityButtonSubs"
             android:layout_width="wrap_content"
@@ -266,10 +260,8 @@
 
         <View
             android:id="@+id/userActivityButtonSubsView"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/view_height"
-            android:layout_below="@id/userActivityButtonSubs"
-            android:background="@color/edit_text" />
+            style="@style/top_view"
+            android:layout_below="@id/userActivityButtonSubs" />
         <RelativeLayout
             android:id="@+id/userActivityButtonAdmins"
             android:layout_width="wrap_content"

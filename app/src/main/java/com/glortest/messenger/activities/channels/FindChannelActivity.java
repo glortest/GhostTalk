@@ -60,7 +60,7 @@ public class FindChannelActivity extends BaseActivity implements ChannelListener
                 binding.findChatActivityUsername.setText(binding.findChatActivityUsername.getText().toString().trim());
             }
             if (binding.findChatActivityUsername.getText().toString().trim().length() < 2){
-                ShowDialog.show(this, getResources().getString(R.string.username_can_not_be_empty));
+                ShowDialog.show(this, getResources().getString(R.string.nickname_can_not_be_empty));
             }else {
                 System.out.println(preferenceManager.getString(Constants.NAME));
                 InitFirebase.firebaseFirestore.collection(Constants.CHANNEL_CONVERSATIONS)

@@ -62,12 +62,10 @@
 
     <View
         android:id="@+id/setPhoneActivityView"
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
+        style="@style/top_view"
         android:layout_below="@+id/setPhoneActivityPhone"
         android:layout_marginTop="25dp"
-        android:layout_marginBottom="25dp"
-        android:background="@color/edit_text" />
+        android:layout_marginBottom="25dp" />
 
 
     <TextView

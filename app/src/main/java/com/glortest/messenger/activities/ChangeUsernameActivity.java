@@ -63,11 +63,11 @@ public class ChangeUsernameActivity extends AppCompatActivity {
                 binding.activityChangeUsernameNew.setText(Constants.USERNAME_SIGN + binding.activityChangeUsernameNew.getText().toString().trim());
             }
             if (binding.activityChangeUsernameNew.getText().toString().trim().length() < 2){
-                ShowDialog.show(this, getResources().getString(R.string.username_can_not_be_empty));
+                ShowDialog.show(this, getResources().getString(R.string.nickname_can_not_be_empty));
             }else if (!binding.activityChangeUsernameNew.getText().toString().trim().equals(binding.activityChangeUsernameNew.getText().toString().trim().toLowerCase())){
-                ShowDialog.show(this, getResources().getString(R.string.username_must_be_in_lower_case));
+                ShowDialog.show(this, getResources().getString(R.string.nickname_must_be_in_lower_case));
             }else if ((binding.activityChangeUsernameNew.getText().toString().trim().contains(" "))){
-                ShowDialog.show(this, getResources().getString(R.string.username_must_be_without_spaces));
+                ShowDialog.show(this, getResources().getString(R.string.nickname_must_be_without_spaces));
             }else {
                 changeUsername();
             }
@@ -82,7 +82,7 @@ public class ChangeUsernameActivity extends AppCompatActivity {
                     .addOnCompleteListener(task -> {
                         if (task.isSuccessful() && task.getResult() != null && task.getResult().getDocuments().size() > 0){
                             ShowLoading.dismissDialog();
-                            ShowDialog.show(this, getResources().getString(R.string.this_username_is_already_linked_to_the_account));
+                            ShowDialog.show(this, getResources().getString(R.string.this_nickname_is_already_linked_to_the_account));
                         } else {
                             InitFirebase.firebaseFirestore.collection(Constants.USERS)
                                     .document(preferenceManager.getString(Constants.USER_ID))
@@ -90,7 +90,7 @@ public class ChangeUsernameActivity extends AppCompatActivity {
                                     .addOnSuccessListener(unused -> {
                                         ShowLoading.dismissDialog();
                                         preferenceManager.putString(Constants.USERNAME, binding.activityChangeUsernameNew.getText().toString().trim());
-                                        ShowToast.show(this, getResources().getString(R.string.username_updated_successfully), false);
+                                        ShowToast.show(this, getResources().getString(R.string.nickname_updated_successfully), false);
                                         onBackPressed();
                                     }).addOnFailureListener(e -> {
                                         ShowLoading.dismissDialog();

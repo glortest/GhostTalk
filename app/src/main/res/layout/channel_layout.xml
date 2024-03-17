@@ -131,7 +131,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="@dimen/marginEnd_small"
                 android:background="@android:color/transparent"
-                android:text="@string/sending_messages_is_limited"
+                android:text="@string/No_admin_chanel_message"
                 android:textColor="@color/text_hint"
                 android:textSize="@dimen/textSize_normal" />
         </RelativeLayout>

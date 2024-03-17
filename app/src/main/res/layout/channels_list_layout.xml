@@ -45,10 +45,8 @@
 
         <View
             android:id="@+id/actionMainHeaderView"
-            android:layout_width="wrap_content"
-            android:layout_height="1dp"
-            android:layout_below="@id/activityMainHeader"
-            android:background="@color/edit_text" />
+            style="@style/top_view"
+            android:layout_below="@id/activityMainHeader" />
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -23,7 +23,7 @@
 
         <TextView
             style="@style/title_fragment"
-            android:text="@string/find_a_channel" />
+            android:text="@string/find_a_chat" />
     </androidx.appcompat.widget.Toolbar>
 
     <EditText
@@ -35,14 +35,17 @@
         android:id="@+id/findChatActivityPhoneNumberHelp"
         android:layout_below="@id/findChatActivityUsername"
         android:layout_centerHorizontal="true"
-        android:text="@string/please_enter_the_username_of_channel"
+        android:text="@string/please_enter_the_nickname_of_chat"
         android:gravity="center"/>
 
-    <Button
-        style="@style/orange_button"
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/findChatActivityButtonFind"
-        android:layout_marginTop="20dp"
+        style="@style/orange_button"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/findChatActivityPhoneNumberHelp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/orange_button_ux"
         android:text="@string/find" />
 
     <androidx.recyclerview.widget.RecyclerView

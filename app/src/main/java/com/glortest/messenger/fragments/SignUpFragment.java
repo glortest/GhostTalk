@@ -89,11 +89,11 @@ public class SignUpFragment extends Fragment {
             if (binding.signUpFragmentName.getText().toString().trim().isEmpty()){
                 ShowDialog.show(requireActivity(), getResources().getString(R.string.name_can_not_be_empty));
             }else if(binding.signUpFragmentUsername.getText().toString().trim().length() < 2){
-                ShowDialog.show(requireActivity(), getResources().getString(R.string.username_can_not_be_empty));
+                ShowDialog.show(requireActivity(), getResources().getString(R.string.nickname_can_not_be_empty));
             }else if (!binding.signUpFragmentUsername.getText().toString().trim().equals(binding.signUpFragmentUsername.getText().toString().trim().toLowerCase())){
-                ShowDialog.show(requireActivity(), getResources().getString(R.string.username_must_be_in_lower_case));
+                ShowDialog.show(requireActivity(), getResources().getString(R.string.nickname_must_be_in_lower_case));
             }else if (binding.signUpFragmentUsername.getText().toString().trim().contains(" ")){
-                ShowDialog.show(requireActivity(), getResources().getString(R.string.username_must_be_without_spaces));
+                ShowDialog.show(requireActivity(), getResources().getString(R.string.nickname_must_be_without_spaces));
             }else if (binding.signUpFragmentPassword.getText().toString().trim().isEmpty()){
                 ShowDialog.show(requireActivity(), getResources().getString(R.string.password_can_not_be_empty));
             }else if (binding.signUpFragmentPassword.getText().toString().trim().length() < Constants.MINIMUM_PASSWORD_LENGTH){
@@ -126,7 +126,7 @@ public class SignUpFragment extends Fragment {
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful() && task.getResult() != null && task.getResult().getDocuments().size() > 0){
                         ShowLoading.dismissDialog();
-                        ShowDialog.show(requireActivity(), getResources().getString(R.string.this_username_is_already_linked_to_the_account));
+                        ShowDialog.show(requireActivity(), getResources().getString(R.string.this_nickname_is_already_linked_to_the_account));
                     } else {
                         String recoveryCode = getRecoveryCode();
                         HashMap<String, Object> user = new HashMap<>();

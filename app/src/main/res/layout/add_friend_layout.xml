@@ -37,7 +37,7 @@
         android:layout_marginEnd="@dimen/marginEnd_large"
         android:layout_below="@id/addFriendActivityUsername"
         android:gravity="center"
-        android:text="@string/please_enter_the_username_of_the_person_you_want_to_find" />
+        android:text="@string/please_enter_the_nickname_of_the_person_you_want_to_find" />
 
     <androidx.appcompat.widget.AppCompatButton
         style="@style/orange_button"

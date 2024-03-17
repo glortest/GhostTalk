@@ -90,7 +90,7 @@
                 <TextView
                     style="@style/text_hint"
                     android:id="@+id/userActivityButtonPhoneNumberHelp"
-                    android:text="@string/username" />
+                    android:text="@string/nickname" />
 
                 <TextView
                     style="@style/text_user"
@@ -100,10 +100,9 @@
         </RelativeLayout>
         <View
             android:id="@+id/userActivityButtonPhoneNumberView"
-            android:layout_width="wrap_content"
+            style="@style/top_view"
             android:layout_height="@dimen/view_height"
-            android:layout_below="@id/userActivityButtonPhoneNumber"
-            android:background="@color/edit_text" />
+            android:layout_below="@id/userActivityButtonPhoneNumber" />
         <RelativeLayout
             android:id="@+id/userActivityButtonBio"
             android:layout_width="wrap_content"
@@ -132,6 +131,7 @@
                     style="@style/text_hint"
                     android:id="@+id/userActivityButtonBioHelp"
                     android:text="@string/bio" />
+
 
                 <TextView
                     style="@style/text_user"

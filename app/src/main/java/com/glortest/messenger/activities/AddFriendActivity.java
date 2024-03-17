@@ -47,11 +47,11 @@ public class AddFriendActivity extends BaseActivity implements UserListeners {
                 binding.addFriendActivityUsername.setText(Constants.USERNAME_SIGN + binding.addFriendActivityUsername.getText().toString().trim());
             }
             if (binding.addFriendActivityUsername.getText().toString().trim().length() < 2){
-                ShowDialog.show(this, getResources().getString(R.string.username_can_not_be_empty));
+                ShowDialog.show(this, getResources().getString(R.string.nickname_can_not_be_empty));
             } else if (!binding.addFriendActivityUsername.getText().toString().trim().equals(binding.addFriendActivityUsername.getText().toString().trim().toLowerCase())){
-                ShowDialog.show(this, getResources().getString(R.string.username_must_be_in_lower_case));
+                ShowDialog.show(this, getResources().getString(R.string.nickname_must_be_in_lower_case));
             } else if (binding.addFriendActivityUsername.getText().toString().trim().contains(" ")){
-                ShowDialog.show(this, getResources().getString(R.string.username_must_be_without_spaces));
+                ShowDialog.show(this, getResources().getString(R.string.nickname_must_be_without_spaces));
             }else {
                 findFriend();
             }

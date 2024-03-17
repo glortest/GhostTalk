@@ -41,13 +41,13 @@
                     android:text="@string/leave_channel" />
 
                 <androidx.appcompat.widget.AppCompatButton
+                    style="@style/orange_button"
                     android:id="@+id/showDialogChatButtonJoin"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/showDialogChatTitle"
                     android:background="@drawable/orange_button_ux"
                     android:text="@string/join_channel"
-                    style="@style/orange_button"
                     android:textSize="@dimen/textSize_small"
                     android:visibility="invisible" />
 

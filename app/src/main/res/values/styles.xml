@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="title_fragment" parent="TextAppearance.AppCompat">
+    <style name="title_fragment" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:textColor">@color/text_color</item>
         <item name="android:textSize">22sp</item>
         <item name="android:layout_width">wrap_content</item>
@@ -12,27 +12,29 @@
     </style>
 
 
-    <style name="text_hint" parent="TextAppearance.AppCompat">
+    <style name="text_hint" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:textColor">@color/text_hint</item>
         <item name="android:textSize">@dimen/textSize_small</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="textAllCaps">false</item>
         <item name="android:layout_alignParentStart">true</item>
         <item name="android:layout_alignParentEnd">true</item>
         <item name="android:fontFamily">@font/moscowsansregular</item>
     </style>
 
-    <style name="text_user" parent="TextAppearance.AppCompat">
+    <style name="text_user" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:textColor">@color/text_color</item>
         <item name="android:textSize">@dimen/textSize_normal</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="textAllCaps">false</item>
         <item name="android:layout_alignParentStart">true</item>
         <item name="android:layout_alignParentEnd">true</item>
         <item name="android:fontFamily">@font/moscowsansregular</item>
     </style>
 
-    <style name="edit_text" parent="TextAppearance.AppCompat">
+    <style name="edit_text" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentStart">true</item>
@@ -44,13 +46,16 @@
         <item name="android:gravity">center</item>
         <item name="android:imeOptions">actionDone</item>
         <item name="android:inputType">text</item>
+        <item name="android:textColorHint">@color/text_hint</item>
         <item name="android:padding">@dimen/padding_large</item>
         <item name="android:textColor">@color/text_color</item>
         <item name="android:textSize">@dimen/textSize_large</item>
+        <item name="textAllCaps">false</item>
         <item name="android:fontFamily">@font/moscowsansregular</item>
     </style>
 
-    <style name="orange_button" parent="TextAppearance.AppCompat">
+    <style name="orange_button" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="textAllCaps">false</item>
         <item name="background">@drawable/orange_button_ux</item>
         <item name="android:textColor">@color/text_color</item>
         <item name="android:textSize">@dimen/textSize_normal</item>
@@ -60,6 +65,17 @@
         <item name="android:fontFamily">@font/moscowsansregular</item>
     </style>
 
+    <style name="top_view" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/edit_text</item>
+    </style>
+
+    <style name="big_top_view" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:background">@color/edit_text</item>
+    </style>
 
 
 </resources>

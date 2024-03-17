@@ -35,7 +35,7 @@
         android:id="@+id/findChatActivityPhoneNumberHelp"
         android:layout_below="@id/findChatActivityUsername"
         android:layout_centerHorizontal="true"
-        android:text="@string/please_enter_the_username_of_channel"
+        android:text="@string/please_enter_the_nickname_of_channel"
         android:gravity="center"/>
 
     <androidx.appcompat.widget.AppCompatButton

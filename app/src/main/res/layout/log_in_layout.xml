@@ -25,7 +25,8 @@
         style="@style/edit_text"
         android:id="@+id/logInFragmentUsername"
         android:layout_below="@id/logInFragmentHeader"
-        android:hint="@string/username"
+        android:hint="@string/nickname"
+        android:textColorHint="@color/text_hint"
         android:textColor="@color/text_color" />
 
     <EditText
@@ -33,6 +34,7 @@
         android:id="@+id/logInFragmentPassword"
         android:layout_below="@id/logInFragmentUsername"
         android:hint="@string/password"
+        android:textColorHint="@color/text_hint"
         android:inputType="textPassword"
         android:textSize="@dimen/textSize_large" />
 
