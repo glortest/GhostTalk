@@ -30,11 +30,11 @@
         android:id="@+id/activityRecoveryCodeButtonStartMessaging"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:elevation="@dimen/elevation"
+        app:elevation="@dimen/null_dimen"
         android:layout_centerHorizontal="true"
         android:src="@drawable/check_ui"
-        android:layout_marginTop="@dimen/marginTop_normal"
-        app:borderWidth="@dimen/borderWidth"
+        android:layout_marginTop="@dimen/normal"
+        app:borderWidth="@dimen/null_dimen"
         android:backgroundTint="@color/orange"
         android:layout_below="@id/activityRecoveryCodeLayout" />
 </RelativeLayout>

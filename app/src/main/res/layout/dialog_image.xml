@@ -6,8 +6,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/showDialogImageCardView"
-        android:layout_width="@dimen/showDialogImageCardView_size"
-        android:layout_height="@dimen/showDialogImageCardView_size"
+        android:layout_width="@dimen/very_big"
+        android:layout_height="@dimen/very_big"
         app:cardCornerRadius="@dimen/corner_radius"
         android:layout_centerInParent="true">
         <RelativeLayout
@@ -35,7 +35,7 @@
                     android:layout_width="200dp"
                     style="@style/orange_button"
                     android:layout_below="@id/showDialogImageTitle"
-                    android:layout_marginTop="@dimen/marginTop_normal"
+                    android:layout_marginTop="@dimen/normal"
                     android:background="@drawable/orange_button_ux"
                     android:text="@string/camera" />
 

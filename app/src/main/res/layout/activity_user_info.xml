@@ -39,7 +39,7 @@
                 android:layout_width="@dimen/buttons_size"
                 android:layout_height="@dimen/buttons_size"
                 android:layout_gravity="end"
-                android:layout_marginEnd="@dimen/marginEnd_normal"
+                android:layout_marginEnd="@dimen/normal"
                 app:srcCompat="@drawable/block_ui" />
         </androidx.appcompat.widget.Toolbar>
 
@@ -49,7 +49,7 @@
             android:layout_height="@dimen/profileImage_size"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/userActivityHeader"
-            android:layout_marginTop="@dimen/marginTop_normal"
+            android:layout_marginTop="@dimen/normal"
             android:scaleType="centerCrop"
             app:riv_oval="true" />
 
@@ -57,8 +57,8 @@
             style="@style/text_user"
             android:id="@+id/userActivityTextInfo"
             android:layout_below="@id/userActivityHeaderImageProfile"
-            android:layout_marginStart="@dimen/marginStart_normal"
-            android:layout_marginTop="@dimen/marginTop_large"
+            android:layout_marginStart="@dimen/normal"
+            android:layout_marginTop="@dimen/large"
             android:text="@string/info"
             android:textColor="@color/orange"
             android:textSize="@dimen/textSize_small"
@@ -84,7 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_marginStart="@dimen/large"
                 android:layout_toEndOf="@id/userActivityButtonPhoneNumberIcon">
 
                 <TextView
@@ -124,7 +124,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_marginStart="@dimen/large"
                 android:layout_toEndOf="@id/userActivityButtonBioIcon">
 
                 <TextView

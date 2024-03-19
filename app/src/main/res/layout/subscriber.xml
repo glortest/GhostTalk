@@ -24,7 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_marginStart="@dimen/marginStart_small"
+            android:layout_marginStart="@dimen/small"
             android:layout_toEndOf="@id/userImageProfile">
 
             <TextView
@@ -50,14 +50,14 @@
                 android:layout_width="@dimen/buttons_size"
                 android:layout_height="@dimen/buttons_size"
                 android:layout_alignParentRight="true"
-                android:layout_marginEnd="@dimen/marginEnd_normal"
+                android:layout_marginEnd="@dimen/normal"
                 android:src="@drawable/exit_ui" />
             <ImageView
                 android:id="@+id/userSetAdmin"
                 android:layout_width="@dimen/buttons_size"
                 android:layout_height="@dimen/buttons_size"
                 android:layout_toLeftOf="@+id/userKickFromChannel"
-                android:layout_marginEnd="@dimen/marginEnd_normal"
+                android:layout_marginEnd="@dimen/normal"
                 android:src="@drawable/panel_settings_ui" />
         </RelativeLayout>
     </RelativeLayout>

@@ -31,7 +31,7 @@
             android:layout_width="@dimen/buttons_size"
             android:layout_height="@dimen/buttons_size"
             android:layout_gravity="end"
-            android:layout_marginEnd="@dimen/marginEnd_normal"
+            android:layout_marginEnd="@dimen/normal"
             android:src="@drawable/check_ui"
             android:visibility="gone"/>
 
@@ -40,7 +40,7 @@
             android:layout_width="@dimen/buttons_size"
             android:layout_height="@dimen/buttons_size"
             android:layout_gravity="end"
-            android:layout_marginEnd="@dimen/marginEnd_normal"
+            android:layout_marginEnd="@dimen/normal"
             android:visibility="visible"
             android:src="@drawable/next_ui" />
     </androidx.appcompat.widget.Toolbar>
@@ -49,7 +49,7 @@
         style="@style/edit_text"
         android:id="@+id/setPhoneActivityPhone"
         android:layout_below="@id/activityChangePasswordHeader"
-        android:background="@drawable/background_edit"
+        android:background="@drawable/background_edit_ux"
         android:inputType="textVisiblePassword"
         />
     <TextView
@@ -86,10 +86,10 @@
         android:layout_below="@id/setPhoneActivityCodeText"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="@dimen/marginTop_normal"
-        android:layout_marginStart="@dimen/marginStart_normal"
-        android:layout_marginEnd="@dimen/marginEnd_normal"
-        android:background="@drawable/background_edit"
+        android:layout_marginTop="@dimen/normal"
+        android:layout_marginStart="@dimen/normal"
+        android:layout_marginEnd="@dimen/normal"
+        android:background="@drawable/background_edit_ux"
         android:gravity="center"
         android:imeOptions="actionDone"
         android:textAlignment="center"

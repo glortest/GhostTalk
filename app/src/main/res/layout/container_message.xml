@@ -2,8 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/container_marginTop"
-    android:padding="@dimen/container_padding">
+    android:layout_marginTop="@dimen/middle_small_dp"
+    android:padding="@dimen/middle_small_dp">
 
     <TextView
         android:fontFamily="@font/moscowsansregular"
@@ -11,12 +11,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
-        android:background="@drawable/background_container_message"
-        android:maxWidth="@dimen/container_messageMaxWidth"
-        android:paddingStart="@dimen/container_paddingStartEnd"
-        android:paddingTop="@dimen/container_paddingTopBottom"
-        android:paddingEnd="@dimen/container_paddingStartEnd"
-        android:paddingBottom="@dimen/container_paddingTopBottom"
+        android:background="@drawable/background_container_message_ui"
+        android:maxWidth="@dimen/very_very_big"
+        android:paddingStart="@dimen/middle_small_dp"
+        android:paddingTop="@dimen/middle_small_dp"
+        android:paddingEnd="@dimen/middle_small_dp"
+        android:paddingBottom="@dimen/middle_small_dp"
         android:textColor="@color/text_color"
         android:textSize="@dimen/textMessage_textSize" />
     <TextView
@@ -24,7 +24,7 @@
         android:id="@+id/containerMessageDateTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/containerDateTime_marginTop"
+        android:layout_marginTop="@dimen/middle_small_dp"
         android:textColor="@color/text_hint"
         android:textSize="@dimen/containerDateTime_textSize"
         android:layout_alignParentEnd="true"

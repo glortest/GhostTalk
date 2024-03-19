@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_marginTop="@dimen/container_marginTop"
-    android:padding="@dimen/container_padding">
+    android:layout_marginTop="@dimen/middle_small_dp"
+    android:padding="@dimen/middle_small_dp">
 
     <com.makeramen.roundedimageview.RoundedImageView
         android:id="@+id/containerImageProfile"
@@ -20,9 +20,9 @@
         android:id="@+id/containerMessageText"
         android:layout_width="200dp"
         android:layout_height="300dp"
-        android:layout_marginStart="@dimen/containerMessageText_marginStart"
+        android:layout_marginStart="@dimen/middle_small_dp"
         android:layout_toEndOf="@id/containerImageProfile"
-        android:background="@drawable/background_received_message"
+        android:background="@drawable/background_received_message_ui"
         android:maxWidth="200dp"
         android:maxHeight="400dp"
         android:paddingStart="4dp"
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/containerMessageText"
         android:layout_alignStart="@id/containerMessageText"
-        android:layout_marginTop="@dimen/containerDateTime_marginTop"
+        android:layout_marginTop="@dimen/middle_small_dp"
         android:textColor="@color/text_hint"
         android:textSize="@dimen/containerDateTime_textSize" />
 </RelativeLayout>

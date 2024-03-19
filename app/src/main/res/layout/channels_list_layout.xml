@@ -37,7 +37,7 @@
                 android:layout_width="@dimen/buttons_size"
                 android:layout_height="@dimen/buttons_size"
                 android:layout_gravity="end"
-                android:layout_marginEnd="@dimen/marginEnd_normal"
+                android:layout_marginEnd="@dimen/normal"
                 app:srcCompat="@drawable/search_ui" />
 
 
@@ -88,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/activityMainWarningImage"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/marginTop_normal"
+                android:layout_marginTop="@dimen/normal"
                 android:text="@string/you_don_t_have_any_channels_yet"
                 android:textColor="@color/text_color"
                 android:textSize="@dimen/textSize_normal" />

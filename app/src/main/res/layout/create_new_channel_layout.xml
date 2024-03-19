@@ -37,14 +37,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/marginTop_normal"
+            android:layout_marginTop="@dimen/normal"
             android:layout_below="@id/signUpFragmentHeader">
 
             <com.makeramen.roundedimageview.RoundedImageView
                 android:id="@+id/signUpFragmentImageProfile"
                 android:layout_width="@dimen/profileImage_size"
                 android:layout_height="@dimen/profileImage_size"
-                android:background="@drawable/background"
+                android:background="@drawable/background_ux"
                 android:scaleType="centerCrop"
                 app:riv_oval="true" />
 
@@ -81,12 +81,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/signUpFragmentAbout"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="@dimen/marginTop_large"
+            android:layout_marginTop="@dimen/large"
             android:backgroundTint="@color/orange"
             android:src="@drawable/check_ui"
-            app:borderWidth="@dimen/borderWidth"
-            app:elevation="@dimen/elevation"
-            android:layout_marginEnd="@dimen/marginEnd_normal"/>
+            app:borderWidth="@dimen/null_dimen"
+            app:elevation="@dimen/null_dimen"
+            android:layout_marginEnd="@dimen/normal"/>
 
     </RelativeLayout>
 </ScrollView>

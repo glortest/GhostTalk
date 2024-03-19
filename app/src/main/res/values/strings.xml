@@ -73,13 +73,10 @@
     <string name="nickname_must_be_without_spaces">Nickname must be without spaces</string>
     <string name="channel_tag_must_be_in_lower_case">Channel tag must be in lower case</string>
     <string name="channel_tag_must_be_without_spaces">Channel tag must be without spaces</string>
-
-    <!--Errors-->
     <string name="you_cannot_use_your_password_again_choose_a_different_one">You cannot use your password again. Choose a different one</string>
     <string name="incorrect_password">Incorrect password. Please try again</string>
     <string name="error">Something went wrong. Please try again</string>
     <string name="we_could_not_find_this_account">We couldn\'t find this account. Please try again.</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="find_chat">Find Chat</string>
     <string name="please_enter_the_nickname_of_the_chat_you_want_to_find">Please enter the Nickname of the chat you want to find</string>
@@ -92,7 +89,7 @@
     <string name="to_the_archive">Add to the archive</string>
     <string name="off_archive">Extract from the archive</string>
     <string name="archived_chats">Archived Chats</string>
-    <string name="open_archive">Open archive</string>
+    <string name="open_archive">Archive</string>
     <string name="from_the_archive">From the archive</string>
     <string name="you_don_t_have_any_archived_chats_yet">You don\'t have any archived chats yet</string>
     <string name="archive_password">Archive password</string>
@@ -125,4 +122,6 @@
     <string name="list_of_subscribers">List of subscribers</string>
     <string name="error_phone">First, you need enter your phone number in the settings</string>
     <string name="image_wather">Image watcher</string>
+    <string name="null_internet">No internet connection</string>
+    <string name="ok">Ok</string>
 </resources>

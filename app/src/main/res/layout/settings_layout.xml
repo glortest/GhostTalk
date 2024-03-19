@@ -37,7 +37,7 @@
             android:id="@+id/settingsActivityImageProfile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marginTop_normal"
+            android:layout_marginTop="@dimen/normal"
             android:layout_below="@id/settingsActivityHeader"
             android:layout_centerHorizontal="true">
 
@@ -64,8 +64,8 @@
             style="@style/title_fragment"
             android:id="@+id/settingsActivityTextAccount"
             android:layout_below="@id/settingsActivityImageProfile"
-            android:layout_marginStart="@dimen/marginStart_normal"
-            android:layout_marginTop="@dimen/marginTop_large"
+            android:layout_marginStart="@dimen/normal"
+            android:layout_marginTop="@dimen/large"
             android:text="@string/account"
             android:textColor="@color/orange" />
 
@@ -92,7 +92,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_marginStart="@dimen/large"
                 android:layout_toEndOf="@id/settingsActivityButtonPhoneNumberIcon">
 
                 <TextView
@@ -134,14 +134,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:src="@drawable/person"/>
+                android:src="@drawable/person_ui"/>
 
             <RelativeLayout
                 android:id="@+id/settingsActivityButtonNameBlock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_marginStart="@dimen/large"
                 android:layout_toEndOf="@id/settingsActivityButtonNameIcon">
 
                 <TextView
@@ -188,7 +188,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_marginStart="@dimen/large"
                 android:layout_toEndOf="@id/settingsActivityButtonBioIcon">
 
                 <TextView
@@ -236,7 +236,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_marginStart="@dimen/large"
                 android:layout_toEndOf="@id/settingsActivityButtonPasswordIcon">
 
                 <TextView
@@ -285,7 +285,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_marginStart="@dimen/large"
                 android:layout_toEndOf="@id/settingsActivityButtonRecoveryCodeIcon">
 
                 <TextView
@@ -316,8 +316,8 @@
             style="@style/text_user"
             android:id="@+id/settingsActivityTextSettings"
             android:layout_below="@id/settingsActivityButtonRecoveryCodeView"
-            android:layout_marginStart="@dimen/marginStart_normal"
-            android:layout_marginTop="@dimen/marginTop_normal"
+            android:layout_marginStart="@dimen/normal"
+            android:layout_marginTop="@dimen/normal"
             android:text="@string/settings"
             android:textColor="@color/orange"
             android:textStyle="bold" />
@@ -345,7 +345,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_marginStart="@dimen/large"
                 android:layout_toEndOf="@id/settingsActivityButtonOnlineIcon">
 
                 <TextView
@@ -395,7 +395,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_marginStart="@dimen/large"
                 android:layout_toEndOf="@id/settingsActivityArchivePasswordIcon">
 
                 <TextView
@@ -446,7 +446,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_marginStart="@dimen/large"
                 android:layout_toEndOf="@id/settingsActivityAccountPhoneIcon">
 
                 <TextView
@@ -494,7 +494,7 @@
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/grey_button_ux"
                 android:text="@string/sign_out"
-                android:textColor="@color/icon_orange" />
+                />
         </RelativeLayout>
     </RelativeLayout>
 </ScrollView>

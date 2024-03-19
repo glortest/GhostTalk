@@ -6,8 +6,8 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
 
 <androidx.cardview.widget.CardView
     android:id="@+id/showDialogChatCardView"
-    android:layout_width="@dimen/showDialogImageCardView_size"
-    android:layout_height="@dimen/showDialogImageCardView_size"
+    android:layout_width="@dimen/very_big"
+    android:layout_height="@dimen/very_big"
     app:cardCornerRadius="@dimen/corner_radius"
     android:layout_centerInParent="true">
     <RelativeLayout

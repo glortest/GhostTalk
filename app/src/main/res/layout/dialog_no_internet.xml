@@ -22,45 +22,25 @@
 
 
                 <TextView
-                    android:fontFamily="@font/moscowsansregular"
                     android:id="@+id/showDialogChatTitle"
                     style="@style/title_fragment"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginBottom="10dp"
                     android:gravity="center"
-                    android:text="@string/select_an_action" />
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/null_internet" />
+
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/showDialogChatButtonLeave"
-                    android:background="@drawable/grey_button_ux"
-                    android:layout_width="200dp"
-                    style="@style/orange_button"
-                    android:layout_below="@id/showDialogChatTitle"
-                    android:text="@string/leave_channel" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    style="@style/orange_button"
-                    android:id="@+id/showDialogChatButtonJoin"
+                    android:id="@+id/button_ok"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/showDialogChatTitle"
                     android:background="@drawable/orange_button_ux"
-                    android:text="@string/join_channel"
+                    android:text="@string/ok"
+                    style="@style/orange_button"
                     android:textSize="@dimen/textSize_small"
                     android:visibility="invisible" />
-
-                <androidx.appcompat.widget.AppCompatButton
-                    style="@style/orange_button"
-                    android:layout_width="200dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/orange_button_ux"
-                    android:id="@+id/showDialogChatButtonSettings"
-                    android:layout_below="@id/showDialogChatButtonJoin"
-                    android:text="@string/channel_settings"
-                    android:textAllCaps="false"
-                    android:visibility="visible" />
 
             </RelativeLayout>
         </RelativeLayout>

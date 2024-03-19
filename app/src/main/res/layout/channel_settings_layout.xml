@@ -37,7 +37,7 @@
             android:id="@+id/settingsActivityImageProfile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/marginTop_normal"
+            android:layout_marginTop="@dimen/normal"
             android:layout_below="@id/settingsActivityHeader"
             android:layout_centerHorizontal="true">
 
@@ -56,8 +56,8 @@
                 android:layout_alignBottom="@+id/settingsActivityHeaderImageProfile"
                 android:backgroundTint="@color/orange"
                 android:src="@drawable/photo_camera_ui"
-                app:borderWidth="0dp"
-                app:elevation="0dp"
+                app:borderWidth="@dimen/null_dimen"
+                app:elevation="@dimen/null_dimen"
                 app:tint="@color/background" />
         </RelativeLayout>
 
@@ -67,8 +67,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/settingsActivityImageProfile"
-            android:layout_marginStart="@dimen/marginStart_normal"
-            android:layout_marginTop="@dimen/marginTop_large"
+            android:layout_marginStart="@dimen/normal"
+            android:layout_marginTop="@dimen/large"
             android:text="@string/account"
             android:textColor="@color/orange"
             android:textSize="@dimen/textSize_small"
@@ -96,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_marginStart="@dimen/large"
                 android:layout_toEndOf="@id/settingsActivityButtonPhoneNumberIcon">
 
                 <TextView
@@ -139,7 +139,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_marginStart="@dimen/large"
                 android:layout_toEndOf="@id/settingsActivityButtonNameIcon">
 
                 <TextView
@@ -186,7 +186,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_marginStart="@dimen/large"
                 android:layout_toEndOf="@id/settingsActivityButtonBioIcon">
 
                 <TextView
@@ -233,7 +233,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_marginStart="@dimen/large"
                 android:layout_toEndOf="@id/userActivityButtonSubsIcon">
 
                 <TextView
@@ -283,7 +283,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:layout_marginStart="@dimen/marginStart_large"
+                android:layout_marginStart="@dimen/large"
                 android:layout_toEndOf="@id/userActivityButtonAdminsIcon">
 
                 <TextView

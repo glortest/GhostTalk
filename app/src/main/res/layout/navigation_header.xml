@@ -19,7 +19,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/headerImageProfile"
-        android:layout_marginTop="@dimen/marginTop_normal">
+        android:layout_marginTop="@dimen/normal">
 
         <TextView
             android:id="@+id/headerName"

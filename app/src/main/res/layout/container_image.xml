@@ -2,15 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="@dimen/container_marginTop"
-    android:padding="@dimen/container_padding">
+    android:layout_marginTop="@dimen/middle_small_dp"
+    android:padding="@dimen/middle_small_dp">
 
     <ImageView
         android:id="@+id/containerMessageText"
         android:layout_width="200dp"
         android:layout_height="300dp"
         android:layout_alignParentEnd="true"
-        android:background="@drawable/background_container_message"
+        android:background="@drawable/background_container_message_ui"
         android:maxWidth="200dp"
         android:maxHeight="400dp"
         android:paddingStart="8dp"
@@ -22,7 +22,7 @@
         android:id="@+id/containerMessageDateTime"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/containerDateTime_marginTop"
+        android:layout_marginTop="@dimen/middle_small_dp"
         android:textColor="@color/text_hint"
         android:textSize="@dimen/containerDateTime_textSize"
         android:layout_alignParentEnd="true"

@@ -39,10 +39,10 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentStart">true</item>
         <item name="android:layout_alignParentEnd">true</item>
-        <item name="android:layout_marginStart">@dimen/marginStart_normal</item>
-        <item name="android:layout_marginTop">@dimen/marginTop_normal</item>
-        <item name="android:layout_marginEnd">@dimen/marginEnd_normal</item>
-        <item name="android:background">@drawable/background_edit</item>
+        <item name="android:layout_marginStart">@dimen/normal</item>
+        <item name="android:layout_marginTop">@dimen/normal</item>
+        <item name="android:layout_marginEnd">@dimen/normal</item>
+        <item name="android:background">@drawable/background_edit_ux</item>
         <item name="android:gravity">center</item>
         <item name="android:imeOptions">actionDone</item>
         <item name="android:inputType">text</item>
@@ -57,7 +57,7 @@
     <style name="orange_button" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="textAllCaps">false</item>
         <item name="background">@drawable/orange_button_ux</item>
-        <item name="android:textColor">@color/text_color</item>
+        <item name="android:textColor">@color/null_reverse_text_color</item>
         <item name="android:textSize">@dimen/textSize_normal</item>
         <item name="android:layout_width">130dp</item>
         <item name="android:layout_centerHorizontal">true</item>
@@ -68,13 +68,13 @@
     <style name="top_view" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">1dp</item>
-        <item name="android:background">@color/edit_text</item>
+        <item name="android:background">@color/edit_text_reverse</item>
     </style>
 
     <style name="big_top_view" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">3dp</item>
-        <item name="android:background">@color/edit_text</item>
+        <item name="android:background">@color/edit_text_reverse</item>
     </style>
 
 

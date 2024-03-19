@@ -82,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/activityArchiveWarningImage"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="@dimen/marginTop_normal"
+                android:layout_marginTop="@dimen/normal"
                 android:text="@string/you_don_t_have_any_archived_chats_yet"
                 android:textColor="@color/text_color"
                 android:textSize="@dimen/textSize_normal" />

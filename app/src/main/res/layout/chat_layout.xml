@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        app:cardElevation="@dimen/elevation">
+        app:cardElevation="@dimen/null_dimen">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -55,7 +55,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:layout_marginStart="@dimen/marginStart_small"
+                            android:layout_marginStart="@dimen/small"
                             android:layout_toEndOf="@id/activityChatImageProfile">
 
                             <TextView
@@ -74,6 +74,7 @@
                                 android:layout_below="@id/activityChatUserName"
                                 android:textColor="@color/orange"
                                 android:textSize="@dimen/activityChatOnline_textSize"
+                                android:text="@string/online"
                                 android:visibility="gone" />
                         </RelativeLayout>
                     </RelativeLayout>
@@ -107,7 +108,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:cardElevation="@dimen/elevation">
+        app:cardElevation="@dimen/null_dimen">
 
         <RelativeLayout
             android:id="@+id/blockedView"
@@ -127,7 +128,7 @@
                 android:layout_alignParentEnd="true"
                 android:textAlignment="center"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="@dimen/marginEnd_small"
+                android:layout_marginEnd="@dimen/small"
                 android:background="@android:color/transparent"
                 android:text="@string/ban_user"
                 android:textColor="@color/text_hint"
@@ -147,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="@dimen/marginEnd_small"
+                android:layout_marginEnd="@dimen/small"
                 android:layout_toStartOf="@id/activityChatsButtonSend"
                 android:background="@android:color/transparent"
                 android:hint="@string/message"
@@ -188,7 +189,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="@dimen/marginTop_normal"
+            android:layout_marginTop="@dimen/normal"
             android:text="@string/no_messages_here_yet"
             android:textColor="@color/text_color"
             android:textSize="@dimen/textSize_normal" />

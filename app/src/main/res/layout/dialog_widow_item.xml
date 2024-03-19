@@ -6,8 +6,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/showDialogCardView"
-        android:layout_width="@dimen/showDialogCardView_size"
-        android:layout_height="@dimen/showDialogCardView_size"
+        android:layout_width="@dimen/very_big"
+        android:layout_height="@dimen/very_big"
         app:cardCornerRadius="@dimen/corner_radius"
         android:layout_centerInParent="true">
         <RelativeLayout
@@ -27,8 +27,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginStart="@dimen/marginStart_small"
-                    android:layout_marginEnd="@dimen/marginEnd_small"
+                    android:layout_marginStart="@dimen/small"
+                    android:layout_marginEnd="@dimen/small"
                     android:gravity="center"/>
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -37,7 +37,7 @@
                     android:layout_height="@dimen/showDialogButtonForward_size"
                     android:layout_below="@id/showDialogMessage"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="@dimen/marginTop_large"
+                    android:layout_marginTop="@dimen/large"
                     android:backgroundTint="@color/orange"
                     android:src="@drawable/next_ui"
                     app:borderWidth="0dp"

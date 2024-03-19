@@ -2,12 +2,20 @@ package com.glortest.messenger.activities;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.app.Dialog;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkCapabilities;
+import android.net.NetworkRequest;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
+import androidx.annotation.NonNull;
 import androidx.core.view.GravityCompat;
 
 import com.bumptech.glide.Glide;
@@ -41,6 +49,9 @@ public class MainActivity extends BaseActivity implements ConversationListener {
     private RecentChatAdapter recentChatAdapter;
     private PreferenceManager preferenceManager;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +60,12 @@ public class MainActivity extends BaseActivity implements ConversationListener {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && checkSelfPermission(Manifest.permission.READ_CONTACTS) != PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{Manifest.permission.READ_CONTACTS}, 100);
         }
+
+        if (!isNetworkConnected()) {
+            showDialog();
+        }
+
+        internetListener();
         initFields();
         initFunc();
     }
@@ -198,5 +215,45 @@ public class MainActivity extends BaseActivity implements ConversationListener {
         Intent intent = new Intent(this, ChatActivity.class);
         intent.putExtra(Constants.USER, user);
         startActivity(intent);
+    }
+
+
+
+
+    private boolean isNetworkConnected() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        return cm.getActiveNetworkInfo() != null && cm.getActiveNetworkInfo().isConnected();
+    }
+
+    public void internetListener() {
+        ConnectivityManager connectivityManager =
+                (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        NetworkRequest request = new NetworkRequest.Builder()
+                .addCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET).build();
+
+        connectivityManager.registerNetworkCallback(request, new ConnectivityManager.NetworkCallback() {
+
+            public void onAvailable(@NonNull Network network) {
+
+            }
+
+            public void onLost(@NonNull Network network) {
+            }
+
+            public void onUnavailable() {
+            }
+        });
+    }
+
+    private void showDialog(){
+        Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.dialog_no_internet);
+
+        Button buttonDialogOk = dialog.findViewById(R.id.button_ok);
+        buttonDialogOk.setOnClickListener(view -> {
+            dialog.dismiss();
+        });
     }
 }

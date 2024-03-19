@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--All-->
     <dimen name="textSize_large">22sp</dimen>
     <dimen name="textSize_normal">18sp</dimen>
     <dimen name="textSize_small">14sp</dimen>
     <dimen name="textSize_greeting">50sp</dimen>
-    <dimen name="marginTop_normal">16dp</dimen>
-    <dimen name="marginTop_large">20dp</dimen>
-    <dimen name="marginTop_small">14dp</dimen>
-    <dimen name="marginBottom_normal">16dp</dimen>
-    <dimen name="marginStart_large">20dp</dimen>
-    <dimen name="marginStart_normal">16dp</dimen>
-    <dimen name="marginStart_small">14dp</dimen>
-    <dimen name="marginEnd_large">20dp</dimen>
-    <dimen name="marginEnd_normal">16dp</dimen>
-    <dimen name="marginEnd_small">14dp</dimen>
+    <dimen name="containerDateTime_textSize">10sp</dimen>
+    <dimen name="activityChatOnline_textSize">12sp</dimen>
+    <dimen name="textMessage_textSize">16sp</dimen>
+
+
+
     <dimen name="padding_large">15dp</dimen>
     <dimen name="padding_normal">10dp</dimen>
     <dimen name="profileImage_size">150dp</dimen>
@@ -22,43 +17,33 @@
     <dimen name="corner_radius">10dp</dimen>
     <dimen name="view_height">1dp</dimen>
     <dimen name="dialogButton_width">150dp</dimen>
-    <dimen name="borderWidth">0dp</dimen>
-    <dimen name="elevation">0dp</dimen>
     <dimen name="userProfileImage_size">60dp</dimen>
     <dimen name="menuView_height">4dp</dimen>
     <dimen name="warningImage_size">50dp</dimen>
     <dimen name="buttons_padding">16dp</dimen>
-    <!--Main Activity-->
     <dimen name="mainNavigationView_width">350dp</dimen>
-    <!--Header-->
     <dimen name="navigationHeaderImageProfile_size">70dp</dimen>
-    <!--Dialog Loading-->
     <dimen name="showLoadingCardView_size">150dp</dimen>
-    <!--Dialog-->
-    <dimen name="showDialogCardView_size">250dp</dimen>
     <dimen name="showDialogButtonForward_size">50dp</dimen>
-    <!--Dialog Image-->
-    <dimen name="showDialogImageCardView_size">250dp</dimen>
-    <!--Dialog sign out-->
-    <dimen name="showDialogSignOutCardView_size">250dp</dimen>
-    <!--Settings-->
+
+
     <dimen name="settingsButtonText_marginTop">2dp</dimen>
     <dimen name="settingsView_height_large">15dp</dimen>
-    <!--Chat Activity-->
     <dimen name="activityChatImageProfile_size">40dp</dimen>
     <dimen name="activityChatWarningImage_size">100dp</dimen>
     <dimen name="activityChatsCardView_layoutMargin">10dp</dimen>
-    <dimen name="activityChats_padding">5dp</dimen>
-    <dimen name="activityChatOnline_textSize">12sp</dimen>
-    <!--Container Message/ Container Received Message-->
-    <dimen name="textMessage_textSize">16sp</dimen>
-    <dimen name="container_padding">5dp</dimen>
-    <dimen name="containerDateTime_marginTop">5dp</dimen>
     <dimen name="containerImageProfile_size">25dp</dimen>
-    <dimen name="containerDateTime_textSize">10sp</dimen>
-    <dimen name="containerMessageText_marginStart">5dp</dimen>
-    <dimen name="container_marginTop">5dp</dimen>
     <dimen name="container_paddingStartEnd">12dp</dimen>
     <dimen name="container_paddingTopBottom">8dp</dimen>
-    <dimen name="container_messageMaxWidth">300dp</dimen>
+
+
+
+    <dimen name="normal">16dp</dimen>
+    <dimen name="large">20dp</dimen>
+    <dimen name="small">14dp</dimen>
+    <dimen name="very_big">250dp</dimen>
+    <dimen name="very_very_big">300dp</dimen>
+    <dimen name="pictures">24dp</dimen>
+    <dimen name="middle_small_dp">5dp</dimen>
+    <dimen name="null_dimen">0dp</dimen>
 </resources>

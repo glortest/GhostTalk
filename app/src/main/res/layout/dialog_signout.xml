@@ -5,8 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <androidx.cardview.widget.CardView
         android:id="@+id/showDialogSignOutCardView"
-        android:layout_width="@dimen/showDialogSignOutCardView_size"
-        android:layout_height="@dimen/showDialogSignOutCardView_size"
+        android:layout_width="@dimen/very_big"
+        android:layout_height="@dimen/very_big"
         app:cardCornerRadius="@dimen/corner_radius"
         android:layout_centerInParent="true">
 
@@ -31,7 +31,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/showDialogSignOutTitle"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="@dimen/marginTop_large"
+                    android:layout_marginTop="@dimen/large"
                     android:background="@drawable/grey_button_ux"
                     android:text="@string/yes_i_am_sure" />
             </RelativeLayout>

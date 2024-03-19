@@ -33,8 +33,8 @@
     <TextView
         style="@style/text_hint"
         android:id="@+id/addFriendActivityPhoneNumberHelp"
-        android:layout_marginStart="@dimen/marginStart_large"
-        android:layout_marginEnd="@dimen/marginEnd_large"
+        android:layout_marginStart="@dimen/large"
+        android:layout_marginEnd="@dimen/large"
         android:layout_below="@id/addFriendActivityUsername"
         android:gravity="center"
         android:text="@string/please_enter_the_nickname_of_the_person_you_want_to_find" />
@@ -45,7 +45,7 @@
         android:layout_width="130dp"
         android:layout_below="@id/addFriendActivityPhoneNumberHelp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/marginTop_normal"
+        android:layout_marginTop="@dimen/normal"
         android:background="@drawable/orange_button_ux"
         android:text="@string/find" />
 
@@ -54,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/addFriendActivityButtonFind"
-        android:layout_marginTop="@dimen/marginTop_small"
+        android:layout_marginTop="@dimen/small"
         android:clipToPadding="false"
         android:orientation="vertical"
         android:overScrollMode="never"

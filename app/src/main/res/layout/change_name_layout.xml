@@ -31,7 +31,7 @@
             android:layout_width="@dimen/buttons_size"
             android:layout_height="@dimen/buttons_size"
             android:layout_gravity="end"
-            android:layout_marginEnd="@dimen/marginEnd_normal"
+            android:layout_marginEnd="@dimen/normal"
             android:src="@drawable/check_ui" />
     </androidx.appcompat.widget.Toolbar>
 
