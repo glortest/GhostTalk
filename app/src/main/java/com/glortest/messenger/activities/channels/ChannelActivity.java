@@ -114,7 +114,6 @@ public class ChannelActivity extends BaseActivity {
     private void setSendButton(){
         if (binding.activityChatsMessage.getText().toString().trim().isEmpty()){
             binding.activityChatsButtonSend.setVisibility(View.GONE);
-            binding.activityChatsButtonAttach.setVisibility(View.VISIBLE);
         }else {
             binding.activityChatsButtonSend.setVisibility(View.VISIBLE);
             binding.activityChatsButtonAttach.setVisibility(View.GONE);

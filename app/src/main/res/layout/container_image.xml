@@ -18,6 +18,7 @@
         android:textColor="@color/background"
         android:textSize="@dimen/textMessage_textSize" />
     <TextView
+        android:visibility="invisible"
         android:fontFamily="@font/moscowsansregular"
         android:id="@+id/containerMessageDateTime"
         android:layout_width="wrap_content"

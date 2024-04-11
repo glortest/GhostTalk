@@ -6,10 +6,22 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     tools:context=".activities.ChatActivity">
+
+    <TextView
+        android:id="@+id/activityChatUserName"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@drawable/grey_button_ux"
+        android:layout_height="30dp"
+        android:fontFamily="@font/moscowsansregular"
+        android:textColor="@color/text_color"
+        android:textSize="12sp"
+        android:textStyle="bold" />
     <androidx.cardview.widget.CardView
+        android:visibility="invisible"
         android:id="@+id/activityChatsCardViewUser"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         app:cardElevation="@dimen/null_dimen">
@@ -58,20 +70,12 @@
                             android:layout_marginStart="@dimen/small"
                             android:layout_toEndOf="@id/activityChatImageProfile">
 
-                            <TextView
-                                android:id="@+id/activityChatUserName"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:textColor="@color/text_color"
-                                android:textSize="@dimen/textSize_normal"
-                                android:textStyle="bold" />
 
 
                             <TextView
                                 android:id="@+id/activityChatOnline"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_below="@id/activityChatUserName"
                                 android:textColor="@color/orange"
                                 android:textSize="@dimen/activityChatOnline_textSize"
                                 android:text="@string/online"
@@ -90,10 +94,13 @@
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <androidx.wear.widget.WearableRecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/activityChatsRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
         android:layout_above="@id/activityChatsCardViewChat"
         android:layout_below="@id/activityChatsCardViewUser"
         android:clipToPadding="false"
@@ -138,7 +145,7 @@
         <RelativeLayout
             android:id="@+id/sendView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="45sp"
             android:background="@color/edit_text"
             android:padding="@dimen/padding_large">
 
@@ -148,26 +155,31 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="@dimen/small"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="@dimen/small"
                 android:layout_toStartOf="@id/activityChatsButtonSend"
                 android:background="@android:color/transparent"
                 android:hint="@string/message"
+                android:fontFamily="@font/moscowsansregular"
                 android:imeOptions="actionDone"
                 android:inputType="text|textCapSentences"
                 android:textColor="@color/text_color"
                 android:textColorHint="@color/text_hint"
-                android:textSize="@dimen/textSize_normal" />
+                android:textSize="12sp" />
 
             <ImageView
                 android:id="@+id/activityChatsButtonSend"
-                android:layout_width="@dimen/buttons_size"
-                android:layout_height="@dimen/buttons_size"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:src="@drawable/send_ui"
                 android:visibility="gone"/>
 
             <ImageView
+                android:visibility="invisible"
                 android:id="@+id/activityChatsButtonAttach"
                 android:layout_width="@dimen/buttons_size"
                 android:layout_height="@dimen/buttons_size"

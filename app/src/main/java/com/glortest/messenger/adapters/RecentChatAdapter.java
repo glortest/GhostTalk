@@ -61,8 +61,7 @@ public class RecentChatAdapter extends RecyclerView.Adapter<RecentChatAdapter.Re
         private void setData(ChatMessage chatMessage){
             Glide.with(context).load(chatMessage.conversionImage).into(binding.recentUserImageProfile);
             binding.recentUserName.setText(chatMessage.conversionName);
-            binding.recentUserMessage.setText(chatMessage.message);
-            binding.recentUserDateTime.setText(new SimpleDateFormat("hh:mm a", Locale.getDefault()).format(chatMessage.dateObject));
+            binding.recentUserMessage.setText(chatMessage.message);;
             binding.getRoot().setOnClickListener(view -> {
                 User user = new User();
                 user.id = chatMessage.conversionId;

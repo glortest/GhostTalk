@@ -32,7 +32,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/text_color"
-                android:textSize="@dimen/textSize_normal"
+                android:textSize="12sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/userName"
                 android:textColor="@color/text_hint"
-                android:textSize="@dimen/textSize_small" />
+                android:textSize="10sp" />
         </RelativeLayout>
     </RelativeLayout>
 </RelativeLayout>

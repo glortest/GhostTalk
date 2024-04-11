@@ -8,23 +8,24 @@
     tools:context=".activities.RecoveryCodeActivity">
 
     <RelativeLayout
+        android:layout_marginTop="60dp"
         android:id="@+id/activityRecoveryCodeLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
 
         <TextView
-            style="@style/title_fragment"
             android:id="@+id/activityRecoveryCodeText"
+            style="@style/title_fragment"
             android:layout_centerHorizontal="true"
-            android:textSize="@dimen/textSize_greeting" />
+            android:textSize="20sp" />
 
         <TextView
             style="@style/text_hint"
             android:layout_below="@id/activityRecoveryCodeText"
             android:gravity="center"
             android:text="@string/remember_recovery_code"
-            android:textSize="@dimen/textSize_normal" />
+            android:textSize="10sp" />
     </RelativeLayout>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/activityRecoveryCodeButtonStartMessaging"

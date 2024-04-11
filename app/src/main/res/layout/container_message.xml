@@ -18,7 +18,7 @@
         android:paddingEnd="@dimen/middle_small_dp"
         android:paddingBottom="@dimen/middle_small_dp"
         android:textColor="@color/text_color"
-        android:textSize="@dimen/textMessage_textSize" />
+        android:textSize="12sp" />
     <TextView
         android:fontFamily="@font/moscowsansregular"
         android:id="@+id/containerMessageDateTime"

@@ -14,8 +14,8 @@
 
         <com.makeramen.roundedimageview.RoundedImageView
             android:id="@+id/userImageProfile"
-            android:layout_width="@dimen/userProfileImage_size"
-            android:layout_height="@dimen/userProfileImage_size"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:scaleType="centerCrop"
             app:riv_oval="true" />
@@ -29,10 +29,12 @@
 
             <TextView
                 style="@style/text_user"
+                android:textSize="12sp"
                 android:id="@+id/userName" />
 
             <TextView
                 style="@style/text_user"
+                android:textSize="10sp"
                 android:id="@+id/userPhoneNumber"
                 android:layout_below="@id/userName" />
         </RelativeLayout>

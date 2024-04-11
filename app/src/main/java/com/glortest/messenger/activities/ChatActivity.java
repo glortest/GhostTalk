@@ -150,7 +150,6 @@ public class ChatActivity extends BaseActivity {
     private void setSendButton(){
         if (binding.activityChatsMessage.getText().toString().trim().isEmpty()){
             binding.activityChatsButtonSend.setVisibility(View.INVISIBLE);
-            binding.activityChatsButtonAttach.setVisibility(View.VISIBLE);
         }else {
             binding.activityChatsButtonSend.setVisibility(View.VISIBLE);
             binding.activityChatsButtonAttach.setVisibility(View.INVISIBLE);
